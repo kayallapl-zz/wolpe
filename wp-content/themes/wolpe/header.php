@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Consultório Wolpe</title>
-    <link rel="stylesheet" type="text/css" href="<?= get_template_directory() ?>css/style.css">
-    <link href="<?= get_template_directory() ?>font-awesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="<?= get_template_directory_uri() ?>/css/style.css">
+    <link href="<?= get_template_directory_uri() ?>/font-awesome/css/all.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- <script src="js/main.js"></script> -->
 </head>
