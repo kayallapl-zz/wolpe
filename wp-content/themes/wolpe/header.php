@@ -11,28 +11,40 @@
     <!-- <script src="js/main.js"></script> -->
 </head>
 <body>
-    <header>
-        <action-bar>
-            <wrapper>
-                <ul id="action-bar-menu">
-                    <li><i class="fas fa-phone"></i>(21)99999-9999</li>
-                    <li><i class="fas fa-envelope"></i>contato@consultoriowolpe.com</li>
-                    <li><i class="fas fa-headset"></i>Atendimento de segunda a sexta</li>
-                </ul>
-                <a id="action-bar-link" href="#">Entre em contato<i class="fas fa-chevron-right"></i></a>
-            </wrapper>
-        </action-bar>
-        <nav>
-            <wrapper>
-                <img src="" alt="logo Wolpe">
-                <ul id="navbar-menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Quem Somos</a></li>
-                    <li><a href="#">Tratamentos</a></li>
-                    <li><a href="#">Cursos</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </wrapper>
-        </nav>
-    </header>
-	<div id="content" class="site-content">
+<header>
+	<div class="header-top">
+		<action-bar>
+			<wrapper>
+				<ul id="action-bar-menu">
+					<li><i class="fas fa-phone"></i>(21)99999-9999</li>
+					<li><i class="fas fa-envelope"></i>contato@consultoriowolpe.com</li>
+					<li><i class="fas fa-headset"></i>Atendimento de segunda a sexta</li>
+				</ul>
+				<a id="action-bar-link" href="#">Entre em contato<i class="fas fa-chevron-right"></i></a>
+			</wrapper>
+		</action-bar>
+		<nav>
+			<wrapper>
+				<img src="<?= get_template_directory_uri() ?>/images/logo.png" alt="logo Wolpe" class="logo">
+				<ul id="navbar-menu">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Quem Somos</a></li>
+					<li><a href="#">Tratamentos</a></li>
+					<li><a href="#">Cursos</a></li>
+					<li><a href="#">Contato</a></li>
+				</ul>
+			</wrapper>
+		</nav>
+	</div>
+	<div class="header-middle">
+		<wrapper>
+			<div class="header-middle-content">
+				<img src="<?= get_template_directory_uri() ?>/images/logo-full.png" alt="logo Wolpe" class="logo">
+				<p class="title">Psicoterapia Cognitivo-Comportamental</p>
+				<p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, eos necessitatibus dolores, voluptas nobis exercitationem voluptatibus ipsa eaque in illo rerum quas fuga earum reprehenderit cupiditate pariatur, labore esse dolor. <a href="#" class="saiba-mais">Saiba Mais <i class="fas fa-chevron-right"></i></a></p>
+				<a href="#" class="button">Marque uma Consulta</a>
+			</div>
+			<img src="<?= get_template_directory_uri() ?>/images/image-header.png" class="image-header" alt="Image Header">
+		</wrapper>
+	</div>
+	</header>
