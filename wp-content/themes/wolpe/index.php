@@ -46,7 +46,7 @@ get_header();
 
 		// else :
 
-			get_template_part( 'template-parts/content', 'none' );
+			get_template_part( 'template-parts/content', 'home' );
 
 		// endif;
 		?>
@@ -55,5 +55,5 @@ get_header();
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
+// get_sidebar();
 get_footer();
