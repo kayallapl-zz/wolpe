@@ -18,8 +18,8 @@ $posts = get_posts($args);
 ?>
 <section id="Entenda">
     <wrapper>
-        <p class="title">Quando procurar ajuda?</p>
-        <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque odit sint odio, pariatur harum iure omnis quibusdam quisquam voluptas placeat reprehenderit quidem praesentium accusamus reiciendis possimus nesciunt, id velit dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam neque nemo tenetur officiis asperiores? Laborum commodi neque eius veritatis aspernatur nulla maiores consequuntur, et quos blanditiis odio, quam, nemo facere. Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="#" class="saiba-mais">Saiba Mais <i class="fas fa-chevron-right"></i></a></p>
+        <p class="title"><?php the_field('titulo_sessao_ajuda') ?></p>
+        <p class="paragraph"><?php the_field('conteudo_sessao_ajuda') ?> <a href="#" class="saiba-mais">Saiba Mais <i class="fas fa-chevron-right"></i></a></p>
     </wrapper>
 </section>
 <section id="Tratamentos">
