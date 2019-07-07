@@ -196,7 +196,7 @@ function create_tratamentos()
 				'singular_name' => __('Tratamento'),
 				'plural_name' => __('Tratamentos'),
 			),
-			'supports' => array('title', 'editor', 'excerpt','thumbnail', 'custom-fields'),
+			'supports' => array('title', 'editor', 'excerpt', 'thumbnail', 'custom-fields'),
 			'public' => true,
 			'has_archive' => true,
 			'rewrite' => array('slug' => 'tratamentos'),
