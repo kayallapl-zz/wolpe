@@ -205,6 +205,7 @@ function create_tratamentos()
 }
 add_action('init', 'create_cursos');
 add_action('init', 'create_tratamentos');
+
 if (function_exists('acf_add_local_field_group')) :
 
 	acf_add_local_field_group(array(
