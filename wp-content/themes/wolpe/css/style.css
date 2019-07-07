@@ -329,12 +329,12 @@ header .header-top nav #navbar-menu li:last-child a {
     padding-right: 0;
 }
 
-header .header-middle {
+section .header-middle {
     z-index: 1;
     position: relative;
 }
 
-header .header-middle .header-middle-content {
+section .header-middle .header-middle-content {
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -357,26 +357,26 @@ header .header-middle .header-middle-content {
     z-index: -1;
 }
 
-header .header-middle .header-middle-content img {
+section .header-middle .header-middle-content img {
     width: 480px;
     padding: 48px 0 24px;
 }
 
-header .header-middle .header-middle-content p.title {
+section .header-middle .header-middle-content p.title {
     font-size: 28px;
     padding: 10px 0;
     color: #000068;
     margin: 0;
 }
 
-header .header-middle .header-middle-content p.paragraph {
+section .header-middle .header-middle-content p.paragraph {
     font-size: 16px;
     text-align: center;
     padding: 0 10px;
     width: auto;
 }
 
-header .header-middle img.image-header {
+section .header-middle img.image-header {
     position: absolute;
     max-height: 640px;
     top: -10%;

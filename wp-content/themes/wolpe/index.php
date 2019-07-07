@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The main template file
  *
@@ -14,19 +15,32 @@
 
 get_header();
 ?>
-
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+<section>
+	<div class="header-middle">
+		<wrapper>
+			<div class="header-middle-content">
+				<img src="<?= get_template_directory_uri() ?>/images/logo-full.png" alt="logo Wolpe" class="logo">
+				<p class="title">Psicoterapia Cognitivo-Comportamental</p>
+				<p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, eos necessitatibus dolores, voluptas nobis exercitationem voluptatibus ipsa eaque in illo rerum quas fuga earum reprehenderit cupiditate pariatur, labore esse dolor. <a href="#" class="saiba-mais">Saiba Mais <i class="fas fa-chevron-right"></i></a></p>
+				<a href="#" class="button">Marque uma Consulta</a>
+			</div>
+			<img src="<?= get_template_directory_uri() ?>/images/image-header.png" class="image-header" alt="Image Header">
+		</wrapper>
+	</div>
+</section>
+<div id="primary" class="content-area">
+	<main id="main" class="site-main">
 
 		<?php
 		// if ( have_posts() ) :
 
 		// 	if ( is_home() && ! is_front_page() ) :
-		// 		?>
-				<!-- <header> -->
-					<!-- <h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1> -->
-				<!-- </header> -->
-				<?php
+		// 		
+		?>
+		<!-- <header> -->
+		<!-- <h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1> -->
+		<!-- </header> -->
+		<?php
 		// 	endif;
 
 		// 	/* Start the Loop */
@@ -46,13 +60,13 @@ get_header();
 
 		// else :
 
-			get_template_part( 'template-parts/content', 'home' );
+		get_template_part('template-parts/content', 'home');
 
 		// endif;
 		?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+	</main><!-- #main -->
+</div><!-- #primary -->
 
 <?php
 // get_sidebar();
