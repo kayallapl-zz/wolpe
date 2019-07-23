@@ -131,6 +131,7 @@ body {
     width: 100%;
     overflow: hidden;
     background-color: aliceblue;
+    scroll-behavior: smooth;
 }
 
 blockquote,
@@ -182,6 +183,22 @@ p.paragraph {
     width: 75%;
 }
 
+form input,
+form textarea {
+    background-color: white;
+    border: 1px solid #61b1f6;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 8px;
+    margin: 8px;
+}
+
+form input[type="submit"] {
+    width: 35px;
+    background-color: #18e;
+    border: none;
+}
+
 .saiba-mais {
     color: #08f;
     text-transform: uppercase;
@@ -199,8 +216,10 @@ p.paragraph {
     }
 }
 
-.button {
+.button,
+button {
     background-color: #ffcd00;
+    border: none;
     padding: 10px 24px;
     line-height: 1;
     font-size: 14px;
@@ -210,7 +229,14 @@ p.paragraph {
     font-family: 'Roboto Bold';
     letter-spacing: 1px;
     border-radius: 5px;
+    cursor: pointer;
     box-shadow: 0 2.5px 2.5px 0 rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #18e;
+    padding: 10px 12px;
+    margin: 8px;
 }
 
 wrapper {
@@ -226,7 +252,6 @@ wrapper {
 section {
     position: relative;
     margin: 0;
-    padding: 0;
     clear: both;
     padding: 80px 0;
     background-color: white;
@@ -257,7 +282,7 @@ header .header-top action-bar {
     align-items: center;
 }
 
-header .header-top action-bar #action-bar-menu {
+header .header-top action-bar .action-bar-menu {
     list-style: none;
     display: flex;
     padding: 0;
@@ -266,17 +291,17 @@ header .header-top action-bar #action-bar-menu {
     align-items: center;
 }
 
-header .header-top action-bar #action-bar-menu li {
+header .header-top action-bar .action-bar-menu li {
     font-size: 15px;
     color: #fffffff0;
     padding-right: 20px;
 }
 
-header .header-top action-bar #action-bar-menu li i {
+header .header-top action-bar .action-bar-menu li i {
     padding-right: 8px;
 }
 
-header .header-top action-bar #action-bar-link {
+header .header-top action-bar .action-bar-link {
     color: white;
     font-family: 'Roboto Black';
     text-transform: uppercase;
@@ -286,7 +311,7 @@ header .header-top action-bar #action-bar-link {
     letter-spacing: 0.5px;
 }
 
-header .header-top action-bar #action-bar-link i {
+header .header-top action-bar .action-bar-link i {
     padding-left: 8px;
 }
 
@@ -299,18 +324,18 @@ header .header-top nav .logo {
     height: 48px;
 }
 
-header .header-top nav #navbar-menu {
+header .header-top nav .navbar-menu {
     list-style: none;
     display: flex;
     height: 100%;
 }
 
-header .header-top nav #navbar-menu li {
+header .header-top nav .navbar-menu li {
     display: flex;
     height: 100%;
 }
 
-header .header-top nav #navbar-menu a {
+header .header-top nav .navbar-menu a {
     display: flex;
     align-items: center;
     height: 100%;
@@ -393,6 +418,11 @@ section .header-middle img.image-header {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+#Tratamentos .cards::after {
+    content: "";
+    width: 30%;
 }
 
 #Tratamentos .cards .card {
@@ -568,3 +598,98 @@ footer .column {
     padding: 24px;
 }
 
+footer form[action="search"] {
+    display: flex;
+    flex-direction: row;
+}
+
+footer form[action="search"] input[type="search"] {
+    width: 100%;
+}
+
+footer form[action="search"] button[type="submit"] {
+    margin-left: 0;
+}
+
+footer .sitemap {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    margin: 24px 0;
+}
+
+footer .sitemap .sitemap-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer .sitemap .sitemap-list .sitemap-item-parent {
+    padding-bottom: 8px;
+    text-align: left;
+}
+
+footer .sitemap .sitemap-list .sitemap-item-parent a {
+    color: #18e;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+footer .sitemap .sitemap-list .saiba-mais {
+    padding: 0;
+}
+
+footer .sitemap .sitemap-list .sitemap-item-child {
+    padding-bottom: 4px;
+    text-align: left;
+}
+
+footer .sitemap .sitemap-list .sitemap-item-child:last-child {
+    padding: 8px 0;
+}
+
+footer .address img {
+    margin-bottom: 8px;
+}
+
+footer .address p {
+    padding: 0;
+    font-size: 14px;
+}
+
+footer .action-bar-footer {
+    list-style: none;
+    margin: 24px 0;
+}
+
+footer .action-bar-footer li {
+    padding-bottom: 8px;
+    font-size: 14px;
+    color: #505050;
+}
+
+footer .action-bar-footer i {
+    padding: 0 8px;
+}
+
+footer form[action="contact"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+footer form[action="contact"] p {
+    font-size: 16px;
+    margin: 16px 0;
+}
+
+footer form[action="contact"] input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer form[action="contact"] button {
+    width: 120px;
+}
