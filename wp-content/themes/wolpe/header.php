@@ -17,18 +17,18 @@
 		<div class="header-top">
 			<action-bar>
 				<wrapper>
-					<ul id="action-bar-menu">
+					<ul class="action-bar-menu">
 						<li><i class="fas fa-phone"></i>(21)99999-9999</li>
 						<li><i class="fas fa-envelope"></i>contato@consultoriowolpe.com</li>
 						<li><i class="fas fa-headset"></i>Atendimento de segunda a sexta</li>
 					</ul>
-					<a id="action-bar-link" href="#">Entre em contato<i class="fas fa-chevron-right"></i></a>
+					<a class="action-bar-link" href="#">Entre em contato<i class="fas fa-chevron-right"></i></a>
 				</wrapper>
 			</action-bar>
 			<nav>
 				<wrapper>
 					<img src="<?= get_template_directory_uri() ?>/images/logo.png" alt="logo Wolpe" class="logo">
-					<ul id="navbar-menu">
+					<ul class="navbar-menu">
 						<li><a href="#">Home</a></li>
 						<li><a href="#">Quem Somos</a></li>
 						<li><a href="#">Tratamentos</a></li>

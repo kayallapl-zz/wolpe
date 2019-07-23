@@ -29,7 +29,7 @@ $posts = get_posts($args);
             <?php if ($tratamentos->have_posts()) : ?>
                 <?php while ($tratamentos->have_posts()) : $tratamentos->the_post(); ?>
                     <div class="card">
-                        <img src=""<?php the_post_thumbnail_url() ?>" alt="Ansiedade Icon">
+                        <img src="<?php the_post_thumbnail_url() ?>" alt="Ansiedade Icon">
                         <div class="card-content">
                             <p class="title"><?php the_title() ?></p>
                             <p class="paragraph"><?php the_content() ?></p>
