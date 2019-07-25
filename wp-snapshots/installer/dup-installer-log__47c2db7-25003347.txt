@@ -1,0 +1,313 @@
+********************************************************************************
+* DUPLICATOR-PRO: Install-Log
+* STEP-1 START @ 01:03:20
+* VERSION: 1.3.14
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+PACKAGE INFO_ CURRENT SERVER                                | ORIGINAL SERVER
+PHP VERSION__:5.6.38                                        | 7.2.19-0ubuntu0.18.04.1
+OS___________:Linux                                         | Linux
+CREATED______:2019-07-25 00:33:47
+WP VERSION___:5.2.2
+DUP VERSION__:1.3.14
+DB___________:5.6.41
+DB TABLES____:13
+DB ROWS______:339
+DB FILE SIZE_:640.89KB
+********************************************************************************
+PHP:		7.2.19-0ubuntu0.18.04.1 | SAPI: cli-server
+PHP MEMORY:	"4294967296" | SUHOSIN: "disabled"
+SERVER:		"PHP 7.2.19-0ubuntu0.18.04.1 Development Server"
+DOC ROOT:	"/home/kayalla/Development/Consultório Wolpe/wolpeback"
+DOC ROOT 755:	true
+LOG FILE 644:	true
+REQUEST URL:	"http://localhost/dup-installer/main.installer.php"
+SAFE MODE :	"0"
+CONFIG MODE :	"NEW"
+--------------------------------------
+PRE-EXTRACT-CHECKS
+--------------------------------------
+- PASS: Apache '.htaccess' not found - no backup needed.
+- PASS: Microsoft IIS 'web.config' not found - no backup needed.
+- PASS: WordFence '.user.ini' not found - no backup needed.
+--------------------------------------
+ARCHIVE SETUP
+--------------------------------------
+NAME:	20190620_consultoriowolpe_47c2db726d073fcb6319_20190725003347_archive.zip
+SIZE:	54.3MB
+
+ZIP:	Shell Exec Unzip
+>>> Starting Shell-Exec Unzip:
+Command: unzip -o -qq '/home/kayalla/Development/Consultório Wolpe/wolpeback/20190620_consultoriowolpe_47c2db726d073fcb6319_20190725003347_archive.zip' -d '/home/kayalla/Development/Consultório Wolpe/wolpeback' 2>&1
+<<< Shell-Exec Unzip Complete.
+--------------------------------------
+POST-EXTACT-CHECKS
+--------------------------------------
+PERMISSION UPDATES:
+    -DIRS:  '755'
+    -FILES: '644'
+
+STEP-1 COMPLETE @ 01:03:25 - RUNTIME: 4.5467 sec.
+
+
+
+********************************************************************************
+* DUPLICATOR-LITE INSTALL-LOG
+* STEP-2 START @ 01:06:31
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+--------------------------------------
+DATABASE-ENVIRONMENT
+--------------------------------------
+MYSQL VERSION:	This Server: 5.7.26 -- Build Server: 5.6.41
+FILE SIZE:	dup-database__47c2db7-25003347.sql (515.85KB)
+TIMEOUT:	5000
+MAXPACK:	16777216
+SQLMODE:	ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+NEW SQL FILE:	[/home/kayalla/Development/Consultório Wolpe/wolpeback/dup-installer/dup-installer-data__47c2db7-25003347.sql]
+COLLATE FB:	Off
+--------------------------------------
+DATABASE RESULTS
+--------------------------------------
+DB VIEWS:	enabled
+DB PROCEDURES:	enabled
+ERRORS FOUND:	0
+DROPPED TABLES:	0
+RENAMED TABLES:	0
+QUERIES RAN:	125
+
+wp1r_commentmeta: (0)
+wp1r_comments: (1)
+wp1r_duplicator_packages: (0)
+wp1r_links: (0)
+wp1r_options: (128)
+wp1r_postmeta: (112)
+wp1r_posts: (41)
+wp1r_term_relationships: (4)
+wp1r_term_taxonomy: (2)
+wp1r_termmeta: (0)
+wp1r_terms: (2)
+wp1r_usermeta: (23)
+wp1r_users: (1)
+Removed '25' cache/transient rows
+
+INSERT DATA RUNTIME: 0.5242 sec.
+STEP-2 COMPLETE @ 01:06:32 - RUNTIME: 0.5263 sec.
+
+
+
+********************************************************************************
+DUPLICATOR-LITE INSTALL-LOG
+STEP-3 START @ 01:06:44
+NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	latin1
+CHARSET CLIENT:	utf8
+
+--------------------------------------
+SERIALIZER ENGINE
+[*] scan every column
+[~] scan only text columns
+[^] no searchable columns
+--------------------------------------
+wp1r_commentmeta^ (0)
+wp1r_comments~ (1)
+wp1r_duplicator_packages^ (0)
+wp1r_links^ (0)
+wp1r_options~ (128)
+
+INSTALLER ERROR:
+[PHP ERR][FATAL] MSG:Uncaught Error: Call to undefined function mb_strimwidth() in /home/kayalla/Development/Consultório Wolpe/wolpeback/dup-installer/classes/class.engine.php:358
+Stack trace:
+#0 /home/kayalla/Development/Consultório Wolpe/wolpeback/dup-installer/ctrls/ctrl.s3.php(222): DUPX_UpdateEngine::load(Object(mysqli), Array, Array, 0)
+#1 /home/kayalla/Development/Consultório Wolpe/wolpeback/dup-installer/main.installer.php(227): require_once('/home/kayalla/D...')
+#2 {main}
+  thrown [CODE:1|FILE:/home/kayalla/Development/Consultório Wolpe/wolpeback/dup-installer/classes/class.engine.php|LINE:358]
+
+
+
+
+********************************************************************************
+DUPLICATOR-LITE INSTALL-LOG
+STEP-3 START @ 01:10:32
+NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	latin1
+CHARSET CLIENT:	utf8
+
+--------------------------------------
+SERIALIZER ENGINE
+[*] scan every column
+[~] scan only text columns
+[^] no searchable columns
+--------------------------------------
+wp1r_commentmeta^ (0)
+wp1r_comments~ (1)
+wp1r_duplicator_packages^ (0)
+wp1r_links^ (0)
+wp1r_options~ (128)
+
+INSTALLER ERROR:
+[PHP ERR][FATAL] MSG:Uncaught Error: Call to undefined function mb_strimwidth() in /home/kayalla/Development/Consultório Wolpe/wolpeback/dup-installer/classes/class.engine.php:358
+Stack trace:
+#0 /home/kayalla/Development/Consultório Wolpe/wolpeback/dup-installer/ctrls/ctrl.s3.php(222): DUPX_UpdateEngine::load(Object(mysqli), Array, Array, 0)
+#1 /home/kayalla/Development/Consultório Wolpe/wolpeback/dup-installer/main.installer.php(227): require_once('/home/kayalla/D...')
+#2 {main}
+  thrown [CODE:1|FILE:/home/kayalla/Development/Consultório Wolpe/wolpeback/dup-installer/classes/class.engine.php|LINE:358]
+
+
+
+
+********************************************************************************
+DUPLICATOR-LITE INSTALL-LOG
+STEP-3 START @ 01:10:43
+NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	latin1
+CHARSET CLIENT:	utf8
+
+--------------------------------------
+SERIALIZER ENGINE
+[*] scan every column
+[~] scan only text columns
+[^] no searchable columns
+--------------------------------------
+wp1r_commentmeta^ (0)
+wp1r_comments~ (1)
+wp1r_duplicator_packages^ (0)
+wp1r_links^ (0)
+wp1r_options~ (128)
+
+INSTALLER ERROR:
+[PHP ERR][FATAL] MSG:Uncaught Error: Call to undefined function mb_strimwidth() in /home/kayalla/Development/Consultório Wolpe/wolpeback/dup-installer/classes/class.engine.php:358
+Stack trace:
+#0 /home/kayalla/Development/Consultório Wolpe/wolpeback/dup-installer/ctrls/ctrl.s3.php(222): DUPX_UpdateEngine::load(Object(mysqli), Array, Array, 0)
+#1 /home/kayalla/Development/Consultório Wolpe/wolpeback/dup-installer/main.installer.php(227): require_once('/home/kayalla/D...')
+#2 {main}
+  thrown [CODE:1|FILE:/home/kayalla/Development/Consultório Wolpe/wolpeback/dup-installer/classes/class.engine.php|LINE:358]
+
+
+
+
+********************************************************************************
+DUPLICATOR-LITE INSTALL-LOG
+STEP-3 START @ 01:10:48
+NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	latin1
+CHARSET CLIENT:	utf8
+
+--------------------------------------
+SERIALIZER ENGINE
+[*] scan every column
+[~] scan only text columns
+[^] no searchable columns
+--------------------------------------
+wp1r_commentmeta^ (0)
+wp1r_comments~ (1)
+wp1r_duplicator_packages^ (0)
+wp1r_links^ (0)
+wp1r_options~ (128)
+wp1r_postmeta~ (112)
+wp1r_posts~ (41)
+
+INSTALLER ERROR:
+[PHP ERR][FATAL] MSG:Uncaught Error: Call to undefined function mb_strimwidth() in /home/kayalla/Development/Consultório Wolpe/wolpeback/dup-installer/classes/class.engine.php:358
+Stack trace:
+#0 /home/kayalla/Development/Consultório Wolpe/wolpeback/dup-installer/ctrls/ctrl.s3.php(222): DUPX_UpdateEngine::load(Object(mysqli), Array, Array, 0)
+#1 /home/kayalla/Development/Consultório Wolpe/wolpeback/dup-installer/main.installer.php(227): require_once('/home/kayalla/D...')
+#2 {main}
+  thrown [CODE:1|FILE:/home/kayalla/Development/Consultório Wolpe/wolpeback/dup-installer/classes/class.engine.php|LINE:358]
+
+
+
+
+********************************************************************************
+DUPLICATOR-LITE INSTALL-LOG
+STEP-3 START @ 01:11:12
+NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	latin1
+CHARSET CLIENT:	utf8
+
+--------------------------------------
+SERIALIZER ENGINE
+[*] scan every column
+[~] scan only text columns
+[^] no searchable columns
+--------------------------------------
+wp1r_commentmeta^ (0)
+wp1r_comments~ (1)
+wp1r_duplicator_packages^ (0)
+wp1r_links^ (0)
+wp1r_options~ (128)
+wp1r_postmeta~ (112)
+wp1r_posts~ (41)
+wp1r_term_relationships~ (4)
+wp1r_term_taxonomy~ (2)
+wp1r_termmeta^ (0)
+wp1r_terms~ (2)
+wp1r_usermeta~ (23)
+wp1r_users~ (1)
+--------------------------------------
+Search1:	'/home2/consu542/public_html/web-site' 
+Change1:	'/home/kayalla/Development/Consultório Wolpe/wolpeback' 
+Search2:	'\/home2\/consu542\/public_html\/web-site' 
+Change2:	'\/home\/kayalla\/Development\/Consult\u00f3rio Wolpe\/wolpeback' 
+Search3:	'%2Fhome2%2Fconsu542%2Fpublic_html%2Fweb-site%2F' 
+Change3:	'%2Fhome%2Fkayalla%2FDevelopment%2FConsult%C3%B3rio+Wolpe%2Fwolpeback%2F' 
+Search4:	'\home2\consu542\public_html\web-site' 
+Change4:	'/home/kayalla/Development/Consultório Wolpe/wolpeback' 
+Search5:	'\\home2\\consu542\\public_html\\web-site' 
+Change5:	'\/home\/kayalla\/Development\/Consult\u00f3rio Wolpe\/wolpeback' 
+Search6:	'%5Chome2%5Cconsu542%5Cpublic_html%5Cweb-site' 
+Change6:	'%2Fhome%2Fkayalla%2FDevelopment%2FConsult%C3%B3rio+Wolpe%2Fwolpeback' 
+Search7:	'//website.consultoriowolpe.com.br' 
+Change7:	'//localhost:8000' 
+Search8:	'\/\/website.consultoriowolpe.com.br' 
+Change8:	'\/\/localhost:8000' 
+Search9:	'%2F%2Fwebsite.consultoriowolpe.com.br' 
+Change9:	'%2F%2Flocalhost%3A8000' 
+Search10:	'https://localhost' 
+Change10:	'http://localhost' 
+Search11:	'https:\/\/localhost' 
+Change11:	'http:\/\/localhost' 
+Search12:	'https%3A%2F%2Flocalhost' 
+Change12:	'http%3A%2F%2Flocalhost' 
+Search13:	'//localhost:8000' 
+Change13:	'//localhost:8000' 
+Search14:	'\/\/localhost:8000' 
+Change14:	'\/\/localhost:8000' 
+Search15:	'%2F%2Flocalhost%3A8000' 
+Change15:	'%2F%2Flocalhost%3A8000' 
+Search16:	'https://localhost' 
+Change16:	'http://localhost' 
+Search17:	'https:\/\/localhost' 
+Change17:	'http:\/\/localhost' 
+Search18:	'https%3A%2F%2Flocalhost' 
+Change18:	'http%3A%2F%2Flocalhost' 
+SCANNED:	Tables:13 	|	 Rows:314 	|	 Cells:2052 
+UPDATED:	Tables:1 	|	 Rows:40 	|	 Cells:44 
+ERRORS:		0 
+RUNTIME:	0.080600 sec
+
+====================================
+CONFIGURATION FILE UPDATES:
+====================================
+
+UPDATED WP-CONFIG ARK FILE:
+ - '/home/kayalla/Development/Consultório Wolpe/wolpeback/wp-config.php'
+- PASS: Successfully created a new .htaccess file.
+- PASS: Existing Apache 'htaccess.orig' was removed
+
+====================================
+NOTICES
+====================================
+
+No General Notices Found
+
+FINAL REPORT NOTICES
+
+STEP-3 COMPLETE @ 01:11:12 - RUNTIME: 0.1121 sec. 
+
+

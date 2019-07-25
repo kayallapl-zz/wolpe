@@ -1,3 +1,5 @@
+#This Apache config file was created by Duplicator Installer on 2019-07-25 01:11:12.
+#The original can be found in archived file with the name htaccess.orig
 
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
@@ -8,10 +10,4 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
 </IfModule>
-
 # END WordPress
-# Use PHPstable as default
-AddHandler application/x-httpd-php-stable .php
-<IfModule mod_suphp.c>
-    suPHP_ConfigPath /opt/phpstable/lib
-</IfModule>

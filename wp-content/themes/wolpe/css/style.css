@@ -1,3 +1,7 @@
+#wpadminbar {
+    display: none;
+}
+
 @font-face {
     font-family: 'Roboto Regular';
     src: url("../fonts/Roboto-Regular.ttf");
@@ -187,7 +191,7 @@ form input,
 form textarea {
     background-color: white;
     border: 1px solid #61b1f6;
-    border-radius: 5px;
+    border-radius: 8px;
     font-size: 14px;
     padding: 8px;
     margin: 8px;
@@ -259,13 +263,6 @@ section {
 
 header {
     background-color: white;
-}
-
-header wrapper {
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    height: 100%;
 }
 
 header .header-top {
@@ -354,12 +351,24 @@ header .header-top nav #navbar-menu li:last-child a {
     padding-right: 0;
 }
 
-section .header-middle {
+#Intro {
+    padding: 0;
+}
+
+#Intro wrapper,
+header wrapper {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+}
+
+#Intro .header-middle {
     z-index: 1;
     position: relative;
 }
 
-section .header-middle .header-middle-content {
+#Intro .header-middle .header-middle-content {
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -369,7 +378,7 @@ section .header-middle .header-middle-content {
     z-index: 1;
 }
 
-.header-middle-content::before {
+#Intro .header-middle .header-middle-content::before {
     content: "";
     height: 400px;
     width: 400px;
@@ -382,26 +391,26 @@ section .header-middle .header-middle-content {
     z-index: -1;
 }
 
-section .header-middle .header-middle-content img {
+#Intro .header-middle .header-middle-content img {
     width: 480px;
     padding: 48px 0 24px;
 }
 
-section .header-middle .header-middle-content p.title {
+#Intro .header-middle .header-middle-content p.title {
     font-size: 28px;
     padding: 10px 0;
     color: #000068;
     margin: 0;
 }
 
-section .header-middle .header-middle-content p.paragraph {
+#Intro .header-middle .header-middle-content p.paragraph {
     font-size: 16px;
     text-align: center;
     padding: 0 10px;
     width: auto;
 }
 
-section .header-middle img.image-header {
+#Intro .header-middle img.image-header {
     position: absolute;
     max-height: 640px;
     top: -10%;
@@ -459,6 +468,10 @@ section .header-middle img.image-header {
     letter-spacing: 0.6px;
 }
 
+#Tratamentos .button {
+    background-color: #18e;
+}
+
 #Cursos .cards {
     display: flex;
     justify-content: center;
@@ -469,13 +482,18 @@ section .header-middle img.image-header {
 #Cursos .cards .card {
     width: 24%;
     margin: 20px;
-    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     background-color: white;
     box-sizing: border-box;
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    transition: all ease .4s;
+    box-shadow: 0 2px 4px rgba(3, 27, 78, 0.06);
+}
+
+#Cursos .cards .card:hover {
+    box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 10px 10px rgba(0, 0, 0, 0.02);
 }
 
 #Cursos .cards .card img {
@@ -514,6 +532,7 @@ section .header-middle img.image-header {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 #Artigos .cards .post {
@@ -523,13 +542,19 @@ section .header-middle img.image-header {
 }
 
 #Artigos .cards .post .card {
-    border-radius: 10px;
+    border-radius: 8px;
     overflow: hidden;
     display: flex;
     position: relative;
     flex-direction: column;
     background-color: white;
-    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.1);
+    width: 100%;
+    transition: all ease .4s;
+    box-shadow: 0 2px 4px rgba(3, 27, 78, 0.06);
+}
+
+#Artigos .cards .post .card:hover {
+    box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 10px 10px rgba(0, 0, 0, 0.02);
 }
 
 #Artigos .cards .post .card img {
@@ -589,6 +614,7 @@ footer wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 footer .column {
@@ -692,4 +718,101 @@ footer form[action="contact"] input {
 
 footer form[action="contact"] button {
     width: 120px;
+}
+
+/* Páginas */
+
+.intern-section {
+    background-color: aliceblue;
+    padding: 60px 0;
+}
+
+.entry-header,
+.page-header {
+    background-color: transparent;
+}
+
+.entry-title,
+.page-title {
+    font-size: 30px;
+    color: #393939;
+    font-family: 'Roboto Bold';
+    letter-spacing: 1px;
+    margin: 5px 0 30px;
+    font-weight: normal;
+    background-color: transparent;
+}
+
+.entry-content p,
+.page-content p,
+.entry-content strong,
+.page-content strong,
+.entry-content em,
+.page-content em,
+.entry-content a,
+.page-content a {
+    width: 80%;
+    margin: auto;
+    font-size: 16px;
+    padding: 8px 0 16px;
+}
+
+.entry-content a {
+    color: #18e;
+}
+
+.entry-content a:hover {
+    text-decoration: underline;
+}
+
+/* Quem Somos */
+
+#QuemSomos{
+    padding-bottom: 0;
+}
+
+#Equipe .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#Equipe .cards .card {
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-color: white;
+    width: 23%;
+    margin: 0 8px 16px;
+    transition: all ease .4s;
+    box-shadow: 0 2px 4px rgba(3, 27, 78, 0.06);
+}
+
+#Equipe .cards .card:hover {
+    box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 10px 10px rgba(0, 0, 0, 0.02);
+}
+
+#Equipe .cards .card img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+#Equipe .cards .card p.title {
+    font-size: 24px;
+    margin: 10px;
+}
+
+#Equipe .cards .card p.paragraph,
+#Equipe .cards .card strong,
+#Equipe .cards .card em,
+#Equipe .cards .card a {
+    width: 100%;
+    font-size: 15px;
+    padding: 0 20px 20px;
 }

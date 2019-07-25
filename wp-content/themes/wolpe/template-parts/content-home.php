@@ -2,12 +2,14 @@
 
 $args_tratamentos = array(
     'post_type' => 'tratamentos',
-    'order'    => 'ASC'
+    'order'    => 'ASC',
+    'numberposts' => 6
 );
 $tratamentos = new WP_Query($args_tratamentos);
 $args_cursos = array(
     'post_type' => 'cursos',
-    'order'    => 'ASC'
+    'order'    => 'ASC',
+    'numberposts' => 3
 );
 $cursos = new WP_Query($args_cursos);
 $args = array(
@@ -19,7 +21,7 @@ $posts = get_posts($args);
 <section id="Entenda">
     <wrapper>
         <p class="title"><?php the_field('titulo_sessao_ajuda') ?></p>
-        <p class="paragraph"><?php the_field('conteudo_sessao_ajuda') ?> <a href="#" class="saiba-mais">Saiba Mais <i class="fas fa-chevron-right"></i></a></p>
+        <p class="paragraph"><?php the_field('conteudo_sessao_ajuda') ?> <a href="/entenda" class="saiba-mais">Saiba Mais <i class="fas fa-chevron-right"></i></a></p>
     </wrapper>
 </section>
 <section id="Tratamentos">
@@ -38,6 +40,7 @@ $posts = get_posts($args);
                 <?php endwhile; ?>
             <?php endif; ?>
         </div>
+        <a href="<?= get_post_type_archive_link('tratamentos') ?>" class="button">Ver todos</a>
     </wrapper>
 </section>
 <section id="Cursos">
@@ -75,6 +78,6 @@ $posts = get_posts($args);
                 </a>
             <?php endforeach; ?>
         </div>
-        <a href="#" class="button">Ver todos</a>
+        <a href="/blog" class="button">Ver todos</a>
     </wrapper>
 </section>

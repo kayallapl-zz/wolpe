@@ -27,13 +27,14 @@
 			</action-bar>
 			<nav>
 				<wrapper>
-					<img src="<?= get_template_directory_uri() ?>/images/logo.png" alt="logo Wolpe" class="logo">
+					<a href="/"><img src="<?= get_template_directory_uri() ?>/images/logo.png" alt="logo Wolpe" class="logo"></a>
 					<ul class="navbar-menu">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Quem Somos</a></li>
-						<li><a href="#">Tratamentos</a></li>
-						<li><a href="#">Cursos</a></li>
-						<li><a href="#">Contato</a></li>
+						<li><a href="/">Home</a></li>
+						<li><a href="/quem-somos">Quem Somos</a></li>
+						<li><a href="/tratamentos">Tratamentos</a></li>
+						<li><a href="/cursos">Cursos</a></li>
+						<li><a href="/blog">Blog</a></li>
+						<li><a href="/contato">Contato</a></li>
 					</ul>
 				</wrapper>
 			</nav>
