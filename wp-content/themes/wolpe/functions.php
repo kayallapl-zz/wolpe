@@ -203,8 +203,53 @@ function create_tratamentos()
 		)
 	);
 }
+function create_equipe()
+{
+
+	register_post_type(
+		'equipe',
+		// CPT Options
+		array(
+			'labels' => array(
+				'name' => __('Equipe'),
+				'singular_name' => __('Membro'),
+				'plural_name' => __('Equipe'),
+			),
+			'supports' => array('title', 'editor', 'excerpt', 'thumbnail', 'custom-fields'),
+			'public' => true,
+			'has_archive' => true,
+			'rewrite' => array('slug' => 'equipe'),
+		)
+	);
+}
+function create_blog()
+{
+
+	register_post_type(
+		'blog',
+		// CPT Options
+		array(
+			'labels' => array(
+				'name' => __('Blog'),
+				'singular_name' => __('Post'),
+				'plural_name' => __('Posts'),
+			),
+			'supports' => array('title', 'editor', 'excerpt', 'thumbnail', 'custom-fields'),
+			'public' => true,
+			'has_archive' => true,
+			'rewrite' => array('slug' => 'blog'),
+			'taxonomies' => array('category'),
+		)
+	);
+}
 add_action('init', 'create_cursos');
 add_action('init', 'create_tratamentos');
+add_action('init', 'create_equipe');
+add_action('init', 'create_blog');
+
+// Remove p tags from category description
+// remove_filter('the_content', 'wpautop');
+// remove_filter('the_excerpt', 'wpautop');
 
 if (function_exists('acf_add_local_field_group')) :
 

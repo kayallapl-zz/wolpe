@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The main template file
  *
@@ -14,8 +15,21 @@
 
 get_header();
 ?>
+<div id="primary" class="content-area">
+	<main id="main" class="site-main">
 
-sAS JABSjkBASKJBA
+		<?php
+		// if ( have_posts() ) :
+
+		// 	if ( is_home() && ! is_front_page() ) :
+		// 		
+		$imgs = get_field('galeria');
+		foreach ($imgs as $img) {
+			echo "<img src=\"$img\">";
+		} ?>
+
+	</main><!-- #main -->
+</div><!-- #primary -->
 
 <?php
 // get_sidebar();

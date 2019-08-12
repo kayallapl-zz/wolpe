@@ -2,24 +2,27 @@
 
 $args_tratamentos = array(
     'post_type' => 'tratamentos',
-    'order'    => 'ASC'
+    'order'    => 'ASC',
+    'posts_per_page' => 6
 );
 $tratamentos = new WP_Query($args_tratamentos);
 $args_cursos = array(
     'post_type' => 'cursos',
-    'order'    => 'ASC'
+    'order'    => 'ASC',
+    'posts_per_page' => 3
 );
 $cursos = new WP_Query($args_cursos);
-$args = array(
-    'numberposts' => 3
+$args_pots = array(
+    'post_type' => 'blog',
+    'order'    => 'ASC',
+    'posts_per_page' => 3
 );
-
-$posts = get_posts($args);
+$posts = new WP_Query($args_pots);
 ?>
 <section id="Entenda">
     <wrapper>
         <p class="title"><?php the_field('titulo_sessao_ajuda') ?></p>
-        <p class="paragraph"><?php the_field('conteudo_sessao_ajuda') ?> <a href="#" class="saiba-mais">Saiba Mais <i class="fas fa-chevron-right"></i></a></p>
+        <p class="paragraph"><?php the_field('conteudo_sessao_ajuda') ?> <a href="/entenda" class="saiba-mais">Saiba Mais <i class="fas fa-chevron-right"></i></a></p>
     </wrapper>
 </section>
 <section id="Tratamentos">
@@ -29,15 +32,20 @@ $posts = get_posts($args);
             <?php if ($tratamentos->have_posts()) : ?>
                 <?php while ($tratamentos->have_posts()) : $tratamentos->the_post(); ?>
                     <div class="card">
-                        <img src="<?php the_post_thumbnail_url() ?>" alt="Ansiedade Icon">
+                        <a href="<?php the_permalink() ?>">
+                            <img src="<?php the_post_thumbnail_url() ?>" alt="Ansiedade Icon">
+                        </a>
                         <div class="card-content">
-                            <p class="title"><?php the_title() ?></p>
-                            <p class="paragraph"><?php the_content() ?></p>
+                            <a href="<?php the_permalink() ?>">
+                                <p class="title"><?php the_title() ?></p>
+                            </a>
+                            <p class="paragraph"><?= wp_trim_words(get_the_content(), 15, '...') ?></p>
                         </div>
                     </div>
                 <?php endwhile; ?>
             <?php endif; ?>
         </div>
+        <a href="<?= get_post_type_archive_link('tratamentos') ?>" class="button">Ver todos</a>
     </wrapper>
 </section>
 <section id="Cursos">
@@ -62,19 +70,21 @@ $posts = get_posts($args);
     <wrapper>
         <p class="title">Blog</p>
         <div class="cards">
-            <?php foreach ($posts as $post) : ?>
-                <a href="<?php the_permalink() ?>" class="post">
-                    <div class="card">
-                        <img src="<?= the_post_thumbnail_url() ?>" alt="Blog Image">
-                        <div class="card-content">
-                            <p class="info"><?php echo get_the_date() ?> • <span><?php echo get_categories()[0]->name ?></span></p>
-                            <p class="title"><?php the_title() ?></p>
-                            <p class="paragraph"><?php the_excerpt() ?></p>
+            <?php if ($posts->have_posts()) : ?>
+                <?php while ($posts->have_posts()) : $posts->the_post(); ?>
+                    <a href="<?php the_permalink() ?>" class="post">
+                        <div class="card">
+                            <img src="<?= the_post_thumbnail_url() ?>" alt="Blog Image">
+                            <div class="card-content">
+                                <p class="info"><?php echo get_the_date() ?> • <span><?php echo get_the_category()[0]->name?></span></p>
+                                <p class="title"><?php the_title() ?></p>
+                                <p class="paragraph"><?= wp_trim_words(get_the_content(), 15, '...') ?></p>
+                            </div>
                         </div>
-                    </div>
-                </a>
-            <?php endforeach; ?>
+                    </a>
+                <?php endwhile; ?>
+            <?php endif; ?>
         </div>
-        <a href="#" class="button">Ver todos</a>
+        <a href="/blog" class="button">Ver todos</a>
     </wrapper>
 </section>
