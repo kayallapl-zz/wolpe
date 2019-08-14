@@ -231,8 +231,8 @@ function create_blog()
 		array(
 			'labels' => array(
 				'name' => __('Blog'),
-				'singular_name' => __('Post'),
-				'plural_name' => __('Posts'),
+				'singular_name' => __('Artigo'),
+				'plural_name' => __('Artigos'),
 			),
 			'supports' => array('title', 'editor', 'excerpt', 'thumbnail', 'custom-fields'),
 			'public' => true,
