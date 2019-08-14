@@ -1,7 +1,11 @@
 <div class="card">
-	<img src="<?php the_post_thumbnail_url() ?>" alt="<?php the_title() ?>">
+	<a href="<?php the_permalink() ?>">
+		<img src="<?php the_post_thumbnail_url() ?>" alt="Ansiedade Icon">
+	</a>
 	<div class="card-content">
-		<p class="title"><?php the_title() ?></p>
-		<p class="paragraph"><?php the_content() ?></p>
+		<a href="<?php the_permalink() ?>">
+			<p class="title"><?php the_title() ?></p>
+		</a>
+		<p class="paragraph"><?= wp_trim_words(get_the_content(), 15, '...') ?></p>
 	</div>
 </div>
