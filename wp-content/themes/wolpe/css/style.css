@@ -427,6 +427,7 @@ header wrapper {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 #Tratamentos .cards::after {
@@ -774,9 +775,10 @@ footer form[action="contact"] button {
 #Equipe .cards {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 #Equipe .cards .card {
@@ -815,4 +817,53 @@ footer form[action="contact"] button {
     width: 100%;
     font-size: 15px;
     padding: 0 20px 20px;
+}
+
+.retrieve{
+    background-color: aliceblue;
+}
+
+.retrieve .retrieve-content img{
+    height: 70px;
+    opacity: 0.6;
+}
+
+.retrieve .retrieve-content .title{
+    color: #18e;
+    font-weight: bold;
+    margin: 20px 0 15px;
+}
+
+.retrieve.retrieve-blog .retrieve-content .title{
+    color: black;
+}
+
+.retrieve .retrieve-content .paragraph{
+    margin: auto;
+}
+
+.retrieve.retrieve-blog .retrieve-content .paragraph{
+    margin: 10px auto 20px;
+}
+
+.retrieve .retrieve-content .date{
+    margin: 0 0 15px;
+}
+
+.retrieve.retrieve-curso, .retrieve.retrieve-blog{
+    padding-top: 0;
+}
+
+.retrieve .retrieve-header-image{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.blog-categoria{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffcd00;
+    letter-spacing: 1px;
 }
