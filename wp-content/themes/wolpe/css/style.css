@@ -325,6 +325,8 @@ header .header-top nav .navbar-menu {
     list-style: none;
     display: flex;
     height: 100%;
+    overflow: hidden;
+    transition: .3s all linear;
 }
 
 header .header-top nav .navbar-menu li {
@@ -349,6 +351,26 @@ header .header-top nav #navbar-menu a:hover {
 
 header .header-top nav #navbar-menu li:last-child a {
     padding-right: 0;
+}
+
+header .header-top nav button.hamburg{
+    width: 60px;
+    height: 60px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+header .header-top nav button.hamburg span {
+    width: 40px;
+    height: 4px;
+    background-color: #005e9f;
+    margin: 3px 0;
 }
 
 #Intro {
@@ -821,6 +843,7 @@ footer form[action="contact"] button {
 
 .retrieve{
     background-color: aliceblue;
+    padding: 80px 0;
 }
 
 .retrieve .retrieve-content img{
@@ -872,4 +895,130 @@ footer form[action="contact"] button {
 .container-galeria{
     width: 80%;
     margin-left: 10%;
+}
+/* Responsive */
+
+@media screen and (max-width: 1100px) {
+    
+    wrapper{
+        width: 768px;
+    }
+    
+    header .header-top action-bar .action-bar-menu li:last-child{
+        display: none;
+    }
+    
+    #Intro .header-middle img.image-header {
+        right: -36%;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    wrapper{
+        width: 100%;
+        padding: 16px;
+    }
+
+    header .header-top action-bar {
+        height: 100%;
+    }
+
+    header .header-top action-bar .action-bar-link {
+        display: none;
+    }
+
+    header .header-top action-bar .action-bar-menu {
+        flex-wrap: wrap;
+    }
+
+    header .header-top action-bar .action-bar-menu li {
+        font-size: 18px;
+        padding: 4px 0;
+        padding-right: 20px;
+    }
+
+    header .header-top nav .navbar-menu {
+        position: absolute;
+        flex-direction: column;
+        top: 100%;
+        width: 100%;
+        background-color: white;
+        height: auto;
+        max-height: 0;
+        margin: 0 -16px;
+    }
+    
+    header .header-top nav .navbar-menu.is-active {
+        max-height: 1000px;
+    }
+
+    header .header-top nav .navbar-menu a {
+        font-size: 18px;
+        height: 60px;
+        width: 100%;
+        text-transform: uppercase;
+        justify-content: center;
+        border-top: 1px solid #c2d2df;
+    }
+
+    header .header-top nav button.hamburg{
+        display: flex;
+    }
+
+    #Intro .header-middle .header-middle-content {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    #Intro .header-middle .header-middle-content::before {
+        bottom: 20%;
+        left: auto;
+        right: -30%;
+    }
+    
+    #Intro .header-middle .header-middle-content img.logo {
+        width: 350px;
+    }
+
+    #Intro .header-middle img.image-header {
+        display: none;
+    }
+
+    section {
+        padding: 20px 0;
+    }
+
+    #Tratamentos .cards, #Cursos .cards, #Artigos .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #Tratamentos .cards .card, #Cursos .cards .card, #Artigos .cards .post .card{
+        width: auto;
+        margin: 20px 30px;
+    }
+
+    #Cursos .cards .card, #Artigos .cards .post{
+        width: 300px;
+    }
+
+    #Artigos .cards .post .card {
+        margin: 0;
+    }
+
+    #Tratamentos .cards .card img {
+        width: 64px;
+        height: auto;
+    }
+
+    footer wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .column {
+        width: 100%;
+    }
 }
