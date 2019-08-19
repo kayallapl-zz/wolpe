@@ -3,6 +3,6 @@
     <div class="retrieve-content">
         <p class="title"><?php the_title() ?></p>
         <p class="date"><?php echo get_the_date() ?></p>
-        <p class="paragraph"><?php the_content() ?></p>
+        <p class="paragraph"><?php force_balance_tags(get_the_content()) ?></p>
     </div>
 </wrapper>
