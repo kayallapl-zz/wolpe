@@ -42,7 +42,7 @@ get_header();
 				<p class="paragraph"><?php the_field('conteudo_banner') ?> <a href="/quem-somos" class="saiba-mais">Saiba Mais <i class="fas fa-chevron-right"></i></a></p>
 				<a href="#" class="button"><?php the_field('botao_banner') ?></a>
 			</div>
-			<img src="<?= get_template_directory_uri() ?>/images/image-header.png" class="image-header" alt="Image Header">
+			<img src="<?= get_template_directory_uri() ?>/images/image-header-min.png" class="image-header" alt="Image Header">
 		</wrapper>
 	</div>
 </section>

@@ -388,3 +388,17 @@ if (function_exists('acf_add_local_field_group')) :
 	));
 
 endif;
+
+
+function wpse_167441_reorder_calendar($query)
+{
+	if (!is_admin() && $query->is_main_query()) {
+
+		if (is_post_type_archive('cursos') || is_post_type_archive('tratamentos') || is_post_type_archive('blog') ) {
+			$query->set('orderby', 'date');
+			$query->set('order', 'ASC');
+		}
+	}
+}
+
+add_action('pre_get_posts', 'wpse_167441_reorder_calendar');
