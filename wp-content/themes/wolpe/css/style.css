@@ -867,3 +867,9 @@ footer form[action="contact"] button {
     color: #ffcd00;
     letter-spacing: 1px;
 }
+
+
+.container-galeria{
+    width: 80%;
+    margin-left: 10%;
+}
