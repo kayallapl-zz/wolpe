@@ -13,24 +13,35 @@
  * @package wolpe
  */
 
-get_header();
+get_header('galeria');
 ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
+		<div class="container-galeria">
 
-		<?php
-		// if ( have_posts() ) :
+			<div id="gallery" style="display:none;">
+				<?php
+				$imgs = get_field('galeria');
+				foreach ($imgs as $img) : ?>
 
-		// 	if ( is_home() && ! is_front_page() ) :
-		// 		
-		$imgs = get_field('galeria');
-		foreach ($imgs as $img) {
-			echo "<img src=\"$img\">";
-		} ?>
+				<img alt="Image 1 Title" src="<?= $img ?>" data-image="<?= $img ?>" data-description="Image 1 Description">
+
+
+				<?php endforeach; ?>
+			</div>
+		</div>
 
 	</main><!-- #main -->
 </div><!-- #primary -->
 
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#gallery").unitegallery();
+	});
+</script>
+
 <?php
+
 // get_sidebar();
 get_footer();

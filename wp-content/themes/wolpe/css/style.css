@@ -863,6 +863,11 @@ footer form[action="contact"] button {
     padding: 80px 0;
 }
 
+.retrieve .retrieve-content p, .retrieve .retrieve-content li{
+    font-size: 18px;
+    color: #4b4b4b;
+}
+
 .retrieve .retrieve-content img{
     height: 70px;
     opacity: 0.6;
@@ -908,6 +913,11 @@ footer form[action="contact"] button {
     letter-spacing: 1px;
 }
 
+
+.container-galeria{
+    width: 80%;
+    margin-left: 10%;
+}
 /* Responsive */
 
 @media screen and (max-width: 1100px) {
