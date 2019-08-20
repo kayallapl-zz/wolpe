@@ -234,7 +234,13 @@ button {
     letter-spacing: 1px;
     border-radius: 5px;
     cursor: pointer;
+    transition: .2s all linear;
     box-shadow: 0 2.5px 2.5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.button:hover,
+button:hover {
+    opacity: 0.8;
 }
 
 button {
@@ -265,13 +271,12 @@ header {
     background-color: white;
 }
 
-header .header-top {
+header #header-top {
     z-index: 10;
-    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
     position: relative;
 }
 
-header .header-top action-bar {
+header #header-top action-bar {
     height: 48px;
     background-color: #08f;
     display: flex;
@@ -279,7 +284,7 @@ header .header-top action-bar {
     align-items: center;
 }
 
-header .header-top action-bar .action-bar-menu {
+header #header-top action-bar .action-bar-menu {
     list-style: none;
     display: flex;
     padding: 0;
@@ -288,17 +293,17 @@ header .header-top action-bar .action-bar-menu {
     align-items: center;
 }
 
-header .header-top action-bar .action-bar-menu li {
+header #header-top action-bar .action-bar-menu li {
     font-size: 15px;
     color: #fffffff0;
     padding-right: 20px;
 }
 
-header .header-top action-bar .action-bar-menu li i {
+header #header-top action-bar .action-bar-menu li i {
     padding-right: 8px;
 }
 
-header .header-top action-bar .action-bar-link {
+header #header-top action-bar .action-bar-link {
     color: white;
     font-family: 'Roboto Black';
     text-transform: uppercase;
@@ -308,20 +313,22 @@ header .header-top action-bar .action-bar-link {
     letter-spacing: 0.5px;
 }
 
-header .header-top action-bar .action-bar-link i {
+header #header-top action-bar .action-bar-link i {
     padding-left: 8px;
 }
 
-header .header-top nav {
+header #header-top nav {
     height: 88px;
     background-color: white;
+    width: 100%;
+    box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.3);
 }
 
-header .header-top nav .logo {
+header #header-top nav .logo {
     height: 48px;
 }
 
-header .header-top nav .navbar-menu {
+header #header-top nav .navbar-menu {
     list-style: none;
     display: flex;
     height: 100%;
@@ -329,12 +336,12 @@ header .header-top nav .navbar-menu {
     transition: .3s all linear;
 }
 
-header .header-top nav .navbar-menu li {
+header #header-top nav .navbar-menu li {
     display: flex;
     height: 100%;
 }
 
-header .header-top nav .navbar-menu a {
+header #header-top nav .navbar-menu a {
     display: flex;
     align-items: center;
     height: 100%;
@@ -345,15 +352,15 @@ header .header-top nav .navbar-menu a {
     transition: .2s linear all;
 }
 
-header .header-top nav #navbar-menu a:hover {
+header #header-top nav #navbar-menu a:hover {
     color: #323232;
 }
 
-header .header-top nav #navbar-menu li:last-child a {
+header #header-top nav #navbar-menu li:last-child a {
     padding-right: 0;
 }
 
-header .header-top nav button.hamburg{
+header #header-top nav button.hamburg{
     width: 60px;
     height: 60px;
     display: none;
@@ -366,11 +373,21 @@ header .header-top nav button.hamburg{
     box-shadow: none;
 }
 
-header .header-top nav button.hamburg span {
+header #header-top nav button.hamburg span {
     width: 40px;
     height: 4px;
     background-color: #005e9f;
     margin: 3px 0;
+}
+
+header #header-top nav.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+header #header-top.sticky{
+    padding-top: 88px;
 }
 
 #Intro {
@@ -899,7 +916,7 @@ footer form[action="contact"] button {
         width: 768px;
     }
     
-    header .header-top action-bar .action-bar-menu li:last-child{
+    header #header-top action-bar .action-bar-menu li:last-child{
         display: none;
     }
     
@@ -915,25 +932,25 @@ footer form[action="contact"] button {
         padding: 16px;
     }
 
-    header .header-top action-bar {
+    header #header-top action-bar {
         height: 100%;
     }
 
-    header .header-top action-bar .action-bar-link {
+    header #header-top action-bar .action-bar-link {
         display: none;
     }
 
-    header .header-top action-bar .action-bar-menu {
+    header #header-top action-bar .action-bar-menu {
         flex-wrap: wrap;
     }
 
-    header .header-top action-bar .action-bar-menu li {
+    header #header-top action-bar .action-bar-menu li {
         font-size: 18px;
         padding: 4px 0;
         padding-right: 20px;
     }
 
-    header .header-top nav .navbar-menu {
+    header #header-top nav .navbar-menu {
         position: absolute;
         flex-direction: column;
         top: 100%;
@@ -944,11 +961,11 @@ footer form[action="contact"] button {
         margin: 0 -16px;
     }
     
-    header .header-top nav .navbar-menu.is-active {
+    header #header-top nav .navbar-menu.is-active {
         max-height: 1000px;
     }
 
-    header .header-top nav .navbar-menu a {
+    header #header-top nav .navbar-menu a {
         font-size: 18px;
         height: 60px;
         width: 100%;
@@ -957,7 +974,7 @@ footer form[action="contact"] button {
         border-top: 1px solid #c2d2df;
     }
 
-    header .header-top nav button.hamburg{
+    header #header-top nav button.hamburg{
         display: flex;
     }
 

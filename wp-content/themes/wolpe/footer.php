@@ -74,6 +74,33 @@
 
 <?php wp_footer(); ?>
 
+<script>
+    window.onscroll = function() {myFunction()};
+
+    var header = document.getElementById("header-top");
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            header.classList.add("sticky");
+            navbar.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+            navbar.classList.remove("sticky");
+        }
+    }
+
+    var button = document.getElementsByClassName("hamburg")[0];
+    var menu = document.getElementsByClassName("navbar-menu")[0];
+
+    button.onclick = function(event) {
+        this.classList.toggle('is-active');
+        menu.classList.toggle('is-active');
+    }
+
+</script>
+
 </body>
 
 </html>
