@@ -198,7 +198,7 @@ form textarea {
 }
 
 form input[type="submit"] {
-    width: 35px;
+    width: auto;
     background-color: #18e;
     border: none;
 }

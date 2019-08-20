@@ -17,19 +17,22 @@ get_header('galeria');
 ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
-		<div class="container-galeria">
+		<wrapper>
+			<p class="title"><?= the_title() ?></p>
+			<div class="container-galeria">
 
-			<div id="gallery" style="display:none;">
-				<?php
-				$imgs = get_field('galeria');
-				foreach ($imgs as $img) : ?>
+				<div id="gallery" style="display:none;">
+					<?php
+					$imgs = get_field('galeria');
+					foreach ($imgs as $img) : ?>
 
-				<img alt="Image 1 Title" src="<?= $img ?>" data-image="<?= $img ?>" data-description="Image 1 Description">
+					<img alt="Image 1 Title" src="<?= $img ?>" data-image="<?= $img ?>" data-description="Image 1 Description">
 
 
-				<?php endforeach; ?>
+					<?php endforeach; ?>
+				</div>
 			</div>
-		</div>
+		</wrapper>
 
 	</main><!-- #main -->
 </div><!-- #primary -->
