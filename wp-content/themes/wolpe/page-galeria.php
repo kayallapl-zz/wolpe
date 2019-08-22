@@ -15,7 +15,7 @@
 
 get_header('galeria');
 ?>
-<div id="primary" class="content-area">
+<div id="primary" class="content-area retrieve">
 	<main id="main" class="site-main">
 		<wrapper>
 			<p class="title"><?= the_title() ?></p>
