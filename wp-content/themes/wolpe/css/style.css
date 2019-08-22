@@ -963,6 +963,11 @@ footer form[action="contact"] button {
         right: -36%;
     }
     
+    footer .column.col-1 .logo {
+        max-width: 300px;
+        margin: auto;
+        width: 100%;
+    }  
 }
 
 @media screen and (max-width: 768px) {
@@ -1073,3 +1078,4 @@ footer form[action="contact"] button {
         width: 100%;
     }
 }
+
