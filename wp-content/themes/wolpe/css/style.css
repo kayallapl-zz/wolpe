@@ -906,6 +906,10 @@ footer form[action="contact"] button {
     text-align: center;
 }
 
+.retrieve.retrieve-Tratamentos .retrieve-content p.title{
+    text-align: center;
+}
+
 .retrieve.retrieve-blog .retrieve-content .title{
     color: black;
 }
