@@ -26,7 +26,7 @@ $args_cursos = array(
 );
 $cursos = new WP_Query($args_cursos);
 $args_pots = array(
-	'post_type' => 'blog',
+	'post_type' => 'artigos',
 	'order'    => 'ASC',
 	'posts_per_page' => 3
 );
@@ -80,14 +80,14 @@ get_header();
 		</section>
 		<section id="Artigos">
 			<wrapper>
-				<p class="title">Blog</p>
+				<p class="title">Artigos</p>
 				<div class="cards">
 					<?php if ($posts->have_posts()) : while ($posts->have_posts()) : $posts->the_post();
-							get_template_part('template-parts/content', 'blog');
+							get_template_part('template-parts/content', 'artigos');
 						endwhile;
 					endif; ?>
 				</div>
-				<a href="/blog" class="button">Ver todos</a>
+				<a href="/artigos" class="button">Ver todos</a>
 			</wrapper>
 		</section>
 	</main><!-- #main -->

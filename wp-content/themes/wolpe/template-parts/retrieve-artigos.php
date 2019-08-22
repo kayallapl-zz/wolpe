@@ -1,4 +1,4 @@
-<img class="retrieve-header-image" src="<?= the_post_thumbnail_url() ?>" alt="Blog Image">
+<img class="retrieve-header-image" src="<?= the_post_thumbnail_url() ?>" alt="Artigos Image">
 <wrapper>
     <div class="retrieve-content">
         <p class="title"><?php the_title() ?></p>

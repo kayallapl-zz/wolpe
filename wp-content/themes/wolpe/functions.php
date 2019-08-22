@@ -226,18 +226,18 @@ function create_blog()
 {
 
 	register_post_type(
-		'blog',
+		'artigos',
 		// CPT Options
 		array(
 			'labels' => array(
-				'name' => __('Blog'),
+				'name' => __('Artigos'),
 				'singular_name' => __('Artigo'),
 				'plural_name' => __('Artigos'),
 			),
 			'supports' => array('title', 'editor', 'excerpt', 'thumbnail', 'custom-fields'),
 			'public' => true,
 			'has_archive' => true,
-			'rewrite' => array('slug' => 'blog'),
+			'rewrite' => array('slug' => 'artigos'),
 			'taxonomies' => array('category'),
 		)
 	);
@@ -394,7 +394,7 @@ function wpse_167441_reorder_calendar($query)
 {
 	if (!is_admin() && $query->is_main_query()) {
 
-		if (is_post_type_archive('cursos') || is_post_type_archive('tratamentos') || is_post_type_archive('blog') ) {
+		if (is_post_type_archive('cursos') || is_post_type_archive('tratamentos') || is_post_type_archive('artigos') ) {
 			$query->set('orderby', 'date');
 			$query->set('order', 'ASC');
 		}

@@ -44,7 +44,7 @@
 						<li><a href="/tratamentos">Tratamentos</a></li>
 						<li><a href="/cursos">Cursos</a></li>
 						<li><a href="/galeria">Galeria</a></li>
-						<li><a href="/blog">Blog</a></li>
+						<li><a href="/artigos">Artigos</a></li>
 						<li><a href="/contato">Contato</a></li>
 					</ul>
 				</wrapper>
