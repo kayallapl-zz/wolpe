@@ -52,7 +52,7 @@ get_header();
 						<img src="<?php the_post_thumbnail_url() ?>" alt="Foto de <?php the_title() ?>">
 						<div class="card-content">
 							<p class="title"><?php the_title() ?></p>
-							<p class="paragraph"><?php the_content() ?></p>
+							<p class="paragraph"><?= force_balance_tags(get_the_content()) ?></p>
 						</div>
 					</div>
 					<?php endwhile; ?>
