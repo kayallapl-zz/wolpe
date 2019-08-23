@@ -402,3 +402,8 @@ function wpse_167441_reorder_calendar($query)
 }
 
 add_action('pre_get_posts', 'wpse_167441_reorder_calendar');
+
+add_action('admin_menu','remove_default_post_type');
+function remove_default_post_type() {
+    remove_menu_page('edit.php');
+}
