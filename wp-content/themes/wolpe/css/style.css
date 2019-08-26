@@ -189,7 +189,7 @@ p.title {
     margin: 5px 0 30px;
 }
 
-p.paragraph, p.paragraph strong, p.paragraph b, p.paragraph i, p.paragraph em {
+p.paragraph, p.paragraph strong, p.paragraph b, p.paragraph em {
     font-size: 18px;
     width: 75%;
 }
