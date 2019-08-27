@@ -890,7 +890,12 @@ footer form[action="contact"] button {
     margin: 16px auto;
 }
 
-.retrieve.retrieve-Tratamentos .retrieve-content p, .retrieve.retrieve-Tratamentos .retrieve-content li, .retrieve.retrieve-Tratamentos .retrieve-content ul{
+.retrieve.retrieve-Tratamentos .retrieve-content p,
+.retrieve.retrieve-Tratamentos .retrieve-content li,
+.retrieve.retrieve-Tratamentos .retrieve-content ul,
+.retrieve.retrieve-Cursos .retrieve-content p,
+.retrieve.retrieve-Cursos .retrieve-content li,
+.retrieve.retrieve-Cursos .retrieve-content ul{
     text-align: left;
 }
 
@@ -906,7 +911,8 @@ footer form[action="contact"] button {
     text-align: center;
 }
 
-.retrieve.retrieve-Tratamentos .retrieve-content p.title{
+.retrieve.retrieve-Tratamentos .retrieve-content p.title,
+.retrieve.retrieve-Cursos .retrieve-content p.title{
     text-align: center;
 }
 
