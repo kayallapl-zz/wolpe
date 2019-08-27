@@ -909,10 +909,12 @@ footer form[action="contact"] button {
     margin: 20px 0 15px;
     font-size: 30px;
     text-align: center;
+    width: 75%;
 }
 
 .retrieve.retrieve-Tratamentos .retrieve-content p.title,
-.retrieve.retrieve-Cursos .retrieve-content p.title{
+.retrieve.retrieve-Cursos .retrieve-content p.title,
+.retrieve.retrieve-Cursos .retrieve-content p.date{
     text-align: center;
 }
 
