@@ -906,13 +906,15 @@ footer form[action="contact"] button {
 
 .retrieve .retrieve-content .title{
     color: #18e;
-    margin: 20px 0 15px;
+    margin: 20px auto 15px;
     font-size: 30px;
     text-align: center;
+    width: 75%;
 }
 
 .retrieve.retrieve-Tratamentos .retrieve-content p.title,
-.retrieve.retrieve-Cursos .retrieve-content p.title{
+.retrieve.retrieve-Cursos .retrieve-content p.title,
+.retrieve.retrieve-Cursos .retrieve-content p.date{
     text-align: center;
 }
 
