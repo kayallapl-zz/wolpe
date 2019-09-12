@@ -208,6 +208,9 @@ form input[type="submit"] {
     width: auto;
     background-color: #18e;
     border: none;
+    color: white;
+    padding: 8px 24px;
+    margin: 24px;
 }
 
 .saiba-mais {
@@ -246,7 +249,7 @@ button {
 }
 
 .button:hover,
-button:hover {
+button:hover, a:hover {
     opacity: 0.8;
 }
 
@@ -653,6 +656,41 @@ header wrapper {
     background-color: #18e;
 }
 
+/* Contato */
+
+#post-84 {
+    width: 100%;
+}
+
+#post-84 .entry-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#post-84 .entry-content .address{
+    width: 40%;
+    padding: 0 20px;
+}
+
+#post-84 .entry-content .address p{
+    width: 100%;
+    margin: 8px 0;
+    padding: 0;
+}
+
+#post-84 .entry-content .address p i{
+    padding: 0 12px;
+}
+
+#post-84 .entry-content .wpcf7{
+    width: 60%;
+}
+
+#post-84 .entry-content .wpcf7 form input{
+    width: 80%;
+}
+
 footer {
     background-color: white;
     padding: 50px 0;
@@ -850,15 +888,19 @@ footer form[action="contact"] button {
 }
 
 #Equipe .cards .card img {
-    height: 200px;
+    height: 250px;
     width: 100%;
     object-fit: cover;
-    object-position: top;
+    object-position: center;
 }
 
 #Equipe .cards .card p.title {
     font-size: 24px;
     margin: 10px;
+}
+
+#Equipe .cards .card:first-child {
+    margin: 16px 30% 50px;
 }
 
 #Equipe .cards .card p.paragraph,
@@ -1053,14 +1095,18 @@ footer form[action="contact"] button {
         padding: 20px 0;
     }
 
-    #Tratamentos .cards, #Cursos .cards, #Artigos .cards {
+    #Tratamentos .cards, #Cursos .cards, #Equipe .cards, #Artigos .cards {
         flex-direction: column;
         align-items: center;
     }
 
-    #Tratamentos .cards .card, #Cursos .cards .card, #Artigos .cards .post .card{
+    #Tratamentos .cards .card, #Cursos .cards .card, #Equipe .cards .card,  #Equipe .cards .card:first-child, #Artigos .cards .post .card{
         width: auto;
         margin: 20px 30px;
+    }
+
+    #Equipe .cards .card img {
+        height: auto;
     }
 
     #Cursos .cards .card, #Artigos .cards .post{

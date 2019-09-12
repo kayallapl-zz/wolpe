@@ -27,7 +27,7 @@
 						<li><i class="fas fa-envelope"></i>consultoriowolpe@gmail.com</li>
 						<li><i class="fas fa-headset"></i>Atendimento de segunda a sexta</li>
 					</ul>
-					<a class="action-bar-link" href="#">Entre em contato<i class="fas fa-chevron-right"></i></a>
+					<a class="action-bar-link" href="/contato">Entre em contato<i class="fas fa-chevron-right"></i></a>
 				</wrapper>
 			</action-bar>
 			<nav id="navbar">

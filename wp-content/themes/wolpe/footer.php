@@ -25,28 +25,25 @@
                 </form>
                 <div class="sitemap">
                     <ul class="sitemap-list">
-                        <li class="sitemap-item-parent"><a href="#">Home</a></li>
-                        <li class="sitemap-item-parent"><a href="#">Sobre nós</a></li>
-                        <li class="sitemap-item-parent"><a href="#">Galeria</a></li>
-                        <li class="sitemap-item-parent"><a href="#">Artigos</a></li>
-                        <li class="sitemap-item-parent"><a href="#">Contato</a></li>
+                        <li class="sitemap-item-parent"><a href="/">Home</a></li>
+                        <li class="sitemap-item-parent"><a href="/quem-somos">Quem somos</a></li>
+                        <li class="sitemap-item-parent"><a href="/galeria">Galeria</a></li>
+                        <li class="sitemap-item-parent"><a href="/artigos">Artigos</a></li>
+                        <li class="sitemap-item-parent"><a href="/contato">Contato</a></li>
                     </ul>
                     <ul class="sitemap-list">
-                        <li class="sitemap-item-parent"><a href="#">Tratamentos</a></li>
-                        <li class="sitemap-item-child"><a href="#">Ansiedade</a></li>
-                        <li class="sitemap-item-child"><a href="#">Depressão</a></li>
-                        <li class="sitemap-item-child"><a href="#">Insônia</a></li>
-                        <li class="sitemap-item-child"><a href="#">Disfunção</a></li>
-                        <li class="sitemap-item-child"><a href="#">Hiperatividade</a></li>
-                        <li class="sitemap-item-child"><a href="#">Dependência</a></li>
-                        <li class="sitemap-item-child"><a href="#" class="saiba-mais">Mais <i class="fas fa-plus"></i></a></li>
+                        <li class="sitemap-item-parent"><a href="/tratamentos">Tratamentos</a></li>
+                        <li class="sitemap-item-child"><a href="/tratamentos/ansiedade">Ansiedade</a></li>
+                        <li class="sitemap-item-child"><a href="/tratamentos/depressao">Depressão</a></li>
+                        <li class="sitemap-item-child"><a href="/tratamentos/insonia">Insônia</a></li>
+                        <li class="sitemap-item-child"><a href="/tratamentos/disfuncao">Disfunção</a></li>
+                        <li class="sitemap-item-child"><a href="/tratamentos/hiperatividade">Hiperatividade</a></li>
+                        <li class="sitemap-item-child"><a href="/tratamentos/dependência">Dependência</a></li>
+                        <li class="sitemap-item-child"><a href="/tratamentos" class="saiba-mais">Mais <i class="fas fa-plus"></i></a></li>
                     </ul>
                     <ul class="sitemap-list">
-                        <li class="sitemap-item-parent"><a href="#">Cursos</a></li>
-                        <li class="sitemap-item-child"><a href="#">Curso 1</a></li>
-                        <li class="sitemap-item-child"><a href="#">Curso 2</a></li>
-                        <li class="sitemap-item-child"><a href="#">Curso 3</a></li>
-                        <li class="sitemap-item-child"><a href="#" class="saiba-mais">Mais <i class="fas fa-plus"></i></a></li>
+                        <li class="sitemap-item-parent"><a href="/cursos">Cursos</a></li>
+                        <li class="sitemap-item-child"><a href="/cursos" class="saiba-mais">Mais <i class="fas fa-plus"></i></a></li>
                     </ul>
                 </div>
             </div>
