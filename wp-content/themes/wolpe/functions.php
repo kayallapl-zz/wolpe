@@ -394,7 +394,7 @@ function wpse_167441_reorder_calendar($query)
 {
 	if (!is_admin() && $query->is_main_query()) {
 
-		if (is_post_type_archive('cursos') || is_post_type_archive('tratamentos') || is_post_type_archive('artigos') ) {
+		if (is_post_type_archive('cursos') || is_post_type_archive('tratamentos') || is_post_type_archive('artigos')) {
 			$query->set('orderby', 'date');
 			$query->set('order', 'ASC');
 		}
@@ -403,7 +403,17 @@ function wpse_167441_reorder_calendar($query)
 
 add_action('pre_get_posts', 'wpse_167441_reorder_calendar');
 
-add_action('admin_menu','remove_default_post_type');
-function remove_default_post_type() {
-    remove_menu_page('edit.php');
+add_action('admin_menu', 'remove_default_post_type');
+function remove_default_post_type()
+{
+	remove_menu_page('edit.php');
 }
+
+function no_nopaging($query)
+{
+	if (is_post_type_archive()) {
+		$query->set('nopaging', 1);
+	}
+}
+
+add_action('parse_query', 'no_nopaging');
