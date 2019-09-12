@@ -669,7 +669,7 @@ header wrapper {
 }
 
 #post-84 .entry-content .address{
-    width: 50%;
+    width: 40%;
     padding: 0 20px;
 }
 
@@ -677,6 +677,7 @@ header wrapper {
     width: 100%;
     margin: 8px 0;
     padding: 0;
+    text-align: right;
 }
 
 #post-84 .entry-content .address p i{
@@ -684,15 +685,19 @@ header wrapper {
 }
 
 #post-84 .entry-content .wpcf7{
-    width: 50%;
+    width: 60%;
 }
 
-#post-84 .entry-content .wpcf7 form input{
-    width: 90%;
+#post-84 .entry-content .wpcf7 form input, #post-84 .entry-content .wpcf7 form textarea{
+    width: 100%;
+}
+
+#post-84 .entry-content .wpcf7 form textarea{
+    height: 100px;
 }
 
 #post-84 .entry-content .wpcf7 form input[type="submit"]{
-    width: 90%;
+    width: auto;
 }
 
 footer {
