@@ -18,8 +18,8 @@
 			<action-bar>
 				<wrapper>
 					<ul class="action-bar-menu">
-						<li><i class="fas fa-phone"></i>(21)2719-7421</li>
-						<li><i class="fas fa-envelope"></i>consultoriowolpe@gmail.com</li>
+						<li><a href="tel:+5521983957869" class="tel"><i class="fas fa-phone"></i>(21)2719-7421</a></li>
+						<li><a href="mailto:consultoriowolpe@gmail.com"><i class="fas fa-envelope"></i>consultoriowolpe@gmail.com</a></li>
 						<li><i class="fas fa-headset"></i>Atendimento de segunda a sexta</li>
 					</ul>
 					<a class="action-bar-link" href="/contato">Entre em contato<i class="fas fa-chevron-right"></i></a>

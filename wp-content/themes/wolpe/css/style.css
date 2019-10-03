@@ -26,87 +26,7 @@
     font-style: normal;
 }
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -114,17 +34,8 @@ video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block;
 }
 
@@ -138,15 +49,11 @@ body {
     scroll-behavior: smooth;
 }
 
-blockquote,
-q {
+blockquote, q {
     quotes: none;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+blockquote:before, blockquote:after, q:before, q:after {
     content: '';
     content: none;
 }
@@ -167,14 +74,13 @@ html {
     outline: none;
 }
 
-p,
-a {
+p, a {
     color: #4b4b4b;
     padding: 5px 0;
     line-height: 1.5;
 }
 
-h3{
+h3 {
     color: #4b4b4b;
     padding: 16px 0 8px;
     line-height: 1.5;
@@ -194,8 +100,7 @@ p.paragraph, p.paragraph strong, p.paragraph b, p.paragraph em {
     width: 75%;
 }
 
-form input,
-form textarea {
+form input, form textarea {
     background-color: white;
     border: 1px solid #61b1f6;
     border-radius: 8px;
@@ -223,15 +128,12 @@ form input[type="submit"] {
 }
 
 @media screen and (max-width: 768px) {
-
-    p,
-    a {
+    p, a {
         padding: 5px 0;
     }
 }
 
-.button,
-button {
+.button, button {
     background-color: #ffcd00;
     border: none;
     padding: 10px 24px;
@@ -248,8 +150,7 @@ button {
     box-shadow: 0 2.5px 2.5px 0 rgba(0, 0, 0, 0.1);
 }
 
-.button:hover,
-button:hover, a:hover {
+.button:hover, button:hover, a:hover {
     opacity: 0.8;
 }
 
@@ -303,7 +204,7 @@ header #header-top action-bar .action-bar-menu {
     align-items: center;
 }
 
-header #header-top action-bar .action-bar-menu li {
+header #header-top action-bar .action-bar-menu li, header #header-top action-bar .action-bar-menu li a {
     font-size: 15px;
     color: #fffffff0;
     padding-right: 20px;
@@ -370,7 +271,7 @@ header #header-top nav #navbar-menu li:last-child a {
     padding-right: 0;
 }
 
-header #header-top nav button.hamburg{
+header #header-top nav button.hamburg {
     width: 60px;
     height: 60px;
     display: none;
@@ -391,12 +292,12 @@ header #header-top nav button.hamburg span {
 }
 
 header #header-top nav.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
-header #header-top.sticky{
+header #header-top.sticky {
     padding-top: 88px;
 }
 
@@ -404,8 +305,7 @@ header #header-top.sticky{
     padding: 0;
 }
 
-#Intro wrapper,
-header wrapper {
+#Intro wrapper, header wrapper {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
@@ -668,35 +568,35 @@ header wrapper {
     width: 100%;
 }
 
-#post-84 .entry-content .address{
+#post-84 .entry-content .address {
     width: 40%;
     padding: 0 20px;
 }
 
-#post-84 .entry-content .address p{
+#post-84 .entry-content .address p {
     width: 100%;
     margin: 8px 0;
     padding: 0;
     text-align: right;
 }
 
-#post-84 .entry-content .address p i{
+#post-84 .entry-content .address p i {
     padding: 0 12px;
 }
 
-#post-84 .entry-content .wpcf7{
+#post-84 .entry-content .wpcf7 {
     width: 60%;
 }
 
-#post-84 .entry-content .wpcf7 form input, #post-84 .entry-content .wpcf7 form textarea{
+#post-84 .entry-content .wpcf7 form input, #post-84 .entry-content .wpcf7 form textarea {
     width: 100%;
 }
 
-#post-84 .entry-content .wpcf7 form textarea{
+#post-84 .entry-content .wpcf7 form textarea {
     height: 100px;
 }
 
-#post-84 .entry-content .wpcf7 form input[type="submit"]{
+#post-84 .entry-content .wpcf7 form input[type="submit"] {
     width: auto;
 }
 
@@ -708,19 +608,21 @@ footer {
 footer wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: space-around;
+    align-items: center;
 }
 
 footer .column {
-    width: 33%;
+    width: 35%;
     display: flex;
     flex-direction: column;
-    padding: 24px;
+    padding: 0 24px;
 }
 
 footer .column.col-1 .logo {
     object-fit: contain;
+    width: 100%;
+    padding: 8px;
 }
 
 footer form[action="search"] {
@@ -740,7 +642,8 @@ footer .sitemap {
     display: flex;
     justify-content: space-between;
     padding: 8px;
-    margin: 24px 0;
+    margin: 0;
+    margin-top: 24px;
 }
 
 footer .sitemap .sitemap-list {
@@ -826,13 +729,11 @@ footer form[action="contact"] button {
     padding: 60px 0;
 }
 
-.entry-header,
-.page-header {
+.entry-header, .page-header {
     background-color: transparent;
 }
 
-.entry-title,
-.page-title {
+.entry-title, .page-title {
     font-size: 30px;
     color: #393939;
     font-family: 'Roboto Bold';
@@ -842,14 +743,7 @@ footer form[action="contact"] button {
     background-color: transparent;
 }
 
-.entry-content p,
-.page-content p,
-.entry-content strong,
-.page-content strong,
-.entry-content em,
-.page-content em,
-.entry-content a,
-.page-content a {
+.entry-content p, .page-content p, .entry-content strong, .page-content strong, .entry-content em, .page-content em, .entry-content a, .page-content a {
     width: 80%;
     margin: auto;
     font-size: 16px;
@@ -866,7 +760,7 @@ footer form[action="contact"] button {
 
 /* Quem Somos */
 
-#QuemSomos{
+#QuemSomos {
     padding-bottom: 0;
 }
 
@@ -912,50 +806,42 @@ footer form[action="contact"] button {
     margin: 16px 30% 50px;
 }
 
-#Equipe .cards .card p.paragraph,
-#Equipe .cards .card strong,
-#Equipe .cards .card em,
-#Equipe .cards .card a {
+#Equipe .cards .card p.paragraph, #Equipe .cards .card strong, #Equipe .cards .card em, #Equipe .cards .card a {
     width: 100%;
     font-size: 15px;
     padding: 0 20px 20px;
 }
 
-.retrieve{
+.retrieve {
     background-color: aliceblue;
     padding: 80px 0;
 }
 
-.retrieve .retrieve-content p, .retrieve .retrieve-content li{
+.retrieve .retrieve-content p, .retrieve .retrieve-content li {
     font-size: 18px;
     color: #4b4b4b;
     line-height: 1.5;
 }
 
-.retrieve .retrieve-content li{
+.retrieve .retrieve-content li {
     margin-left: 16px;
 }
 
-.retrieve .retrieve-content ul{
+.retrieve .retrieve-content ul {
     width: 75%;
     margin: 16px auto;
 }
 
-.retrieve.retrieve-Tratamentos .retrieve-content p,
-.retrieve.retrieve-Tratamentos .retrieve-content li,
-.retrieve.retrieve-Tratamentos .retrieve-content ul,
-.retrieve.retrieve-Cursos .retrieve-content p,
-.retrieve.retrieve-Cursos .retrieve-content li,
-.retrieve.retrieve-Cursos .retrieve-content ul{
+.retrieve.retrieve-Tratamentos .retrieve-content p, .retrieve.retrieve-Tratamentos .retrieve-content li, .retrieve.retrieve-Tratamentos .retrieve-content ul, .retrieve.retrieve-Cursos .retrieve-content p, .retrieve.retrieve-Cursos .retrieve-content li, .retrieve.retrieve-Cursos .retrieve-content ul {
     text-align: left;
 }
 
-.retrieve .retrieve-content img{
+.retrieve .retrieve-content img {
     height: 70px;
     opacity: 0.6;
 }
 
-.retrieve .retrieve-content .title{
+.retrieve .retrieve-content .title {
     color: #18e;
     margin: 20px auto 15px;
     font-size: 30px;
@@ -963,96 +849,86 @@ footer form[action="contact"] button {
     width: 75%;
 }
 
-.retrieve.retrieve-Tratamentos .retrieve-content p.title,
-.retrieve.retrieve-Cursos .retrieve-content p.title,
-.retrieve.retrieve-Cursos .retrieve-content p.date{
+.retrieve.retrieve-Tratamentos .retrieve-content p.title, .retrieve.retrieve-Cursos .retrieve-content p.title, .retrieve.retrieve-Cursos .retrieve-content p.date {
     text-align: center;
 }
 
-.retrieve.retrieve-blog .retrieve-content .title{
+.retrieve.retrieve-blog .retrieve-content .title {
     color: black;
 }
 
-.retrieve .retrieve-content .paragraph{
+.retrieve .retrieve-content .paragraph {
     margin: auto;
 }
 
-.retrieve.retrieve-blog .retrieve-content .paragraph{
+.retrieve.retrieve-blog .retrieve-content .paragraph {
     margin: 10px auto 20px;
 }
 
-.retrieve .retrieve-content .date{
+.retrieve .retrieve-content .date {
     margin: 0 0 15px;
 }
 
-.retrieve.retrieve-Cursos, .retrieve.retrieve-Artigos{
+.retrieve.retrieve-Cursos, .retrieve.retrieve-Artigos {
     padding-top: 0;
 }
 
-.retrieve .retrieve-header-image{
+.retrieve .retrieve-header-image {
     width: 100%;
     height: 300px;
     object-fit: cover;
     object-position: center;
 }
 
-.blog-categoria{
+.blog-categoria {
     text-transform: uppercase;
     font-weight: bold;
     color: #ffcd00;
     letter-spacing: 1px;
 }
 
-.container-galeria{
+.container-galeria {
     width: 100%;
 }
+
 /* Responsive */
 
 @media screen and (max-width: 1100px) {
-    
-    wrapper{
+    wrapper {
         width: 768px;
     }
-    
-    header #header-top action-bar .action-bar-menu li:last-child{
+    header #header-top action-bar .action-bar-menu li:last-child {
         display: none;
     }
-    
     #Intro .header-middle img.image-header {
         right: -36%;
     }
-    
     footer .column.col-1 .logo {
         max-width: 300px;
         margin: auto;
         width: 100%;
-    }  
+    }
 }
 
 @media screen and (max-width: 768px) {
-    wrapper{
+    wrapper {
         width: 100%;
         padding: 16px;
     }
-
     header #header-top action-bar {
         height: 100%;
     }
-
     header #header-top action-bar .action-bar-link {
         display: none;
     }
-
     header #header-top action-bar .action-bar-menu {
         flex-wrap: wrap;
     }
-
     header #header-top action-bar .action-bar-menu li {
         font-size: 18px;
         padding: 4px 0;
         padding-right: 20px;
     }
-
     header #header-top nav .navbar-menu {
         position: absolute;
         flex-direction: column;
@@ -1063,11 +939,9 @@ footer form[action="contact"] button {
         max-height: 0;
         margin: 0 -16px;
     }
-    
     header #header-top nav .navbar-menu.is-active {
         max-height: 1000px;
     }
-
     header #header-top nav .navbar-menu a {
         font-size: 18px;
         height: 60px;
@@ -1076,69 +950,54 @@ footer form[action="contact"] button {
         justify-content: center;
         border-top: 1px solid #c2d2df;
     }
-
-    header #header-top nav button.hamburg{
+    header #header-top nav button.hamburg {
         display: flex;
     }
-
     #Intro .header-middle .header-middle-content {
         width: 100%;
         padding: 20px 0;
     }
-
     #Intro .header-middle .header-middle-content::before {
         bottom: 20%;
         left: auto;
         right: -30%;
     }
-    
     #Intro .header-middle .header-middle-content img.logo {
         width: 350px;
     }
-
     #Intro .header-middle img.image-header {
         display: none;
     }
-
     section {
         padding: 20px 0;
     }
-
     #Tratamentos .cards, #Cursos .cards, #Equipe .cards, #Artigos .cards {
         flex-direction: column;
         align-items: center;
     }
-
-    #Tratamentos .cards .card, #Cursos .cards .card, #Equipe .cards .card,  #Equipe .cards .card:first-child, #Artigos .cards .post .card{
+    #Tratamentos .cards .card, #Cursos .cards .card, #Equipe .cards .card, #Equipe .cards .card:first-child, #Artigos .cards .post .card {
         width: auto;
         margin: 20px 30px;
     }
-
     #Equipe .cards .card img {
         height: auto;
     }
-
-    #Cursos .cards .card, #Artigos .cards .post{
+    #Cursos .cards .card, #Artigos .cards .post {
         width: 300px;
     }
-
     #Artigos .cards .post .card {
         margin: 0;
     }
-
     #Tratamentos .cards .card img {
         width: 64px;
         height: auto;
     }
-
     footer wrapper {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-
     footer .column {
         width: 100%;
     }
 }
-
