@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.2.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-06-17 08:16:10+0000\n"
+"PO-Revision-Date: 2019-07-01 10:29:02+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1777,7 +1777,7 @@ msgstr "Incorporar um conteúdo do Hulu."
 
 #: wp-includes/js/dist/block-library.js:3416
 msgid "Embed a Dailymotion video."
-msgstr "Incorporar um vídeo do Dailymotion"
+msgstr "Incorporar um vídeo do Dailymotion."
 
 #: wp-includes/js/dist/block-library.js:3390
 msgid "Embed CollegeHumor content."

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.2.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-06-19 12:07:01+0000\n"
+"PO-Revision-Date: 2019-07-02 08:07:52+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -92,8 +92,8 @@ msgid "Improvements for Everyone"
 msgstr "Melhorias para todos"
 
 #: wp-admin/about.php:154
-msgid "This administrator-focused update will let you safely fix or manage fatal errors without requiring developer time. It features better handling of the so-called “white screen of death”, and a way to enter recovery mode, which pauses error-causing plugins or themes."
-msgstr "Esta actualização focada na administração vai permitir corrigir ou gerir erros fatais de forma segura, sem necessidade de programação. Inclui uma gestão melhorada do chamado “white screen of death”, e uma maneira de entrar no modo de recuperação, que suspende plugins ou temas que estão a causar erros."
+msgid "This administrator-focused update will let you safely fix or manage fatal errors without requiring a developer. It features better handling of the so-called “white screen of death”, and a way to enter recovery mode, which pauses error-causing plugins or themes."
+msgstr "Esta actualização focada na administração permite-lhe corrigir ou gerir erros fatais de forma segura, sem necessidade de programação. Inclui uma gestão melhorada do chamado “white screen of death”, e uma maneira de entrar no modo de recuperação, que suspende plugins ou temas que estão a causar erros."
 
 #: wp-admin/about.php:153
 msgid "PHP Error Protection"
@@ -9914,7 +9914,7 @@ msgstr "Este item de menu foi eliminado com sucesso."
 #: wp-admin/includes/class-wp-theme-install-list-table.php:151
 #: wp-admin/setup-config.php:275
 msgid "Try again"
-msgstr "Tente novamente"
+msgstr "Tentar de novo"
 
 #: wp-admin/includes/ajax-actions.php:1520
 msgid "Please provide a custom field name."
@@ -12930,7 +12930,7 @@ msgstr "LiveJournal"
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:278
 #: wp-admin/theme-install.php:65
 msgid "Try Again"
-msgstr "Tentar Novamente"
+msgstr "Tentar de novo"
 
 #: wp-admin/includes/import.php:183
 msgid "Blogger"
