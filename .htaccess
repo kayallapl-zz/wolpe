@@ -1,7 +1,7 @@
-# Use PHP54
-AddHandler application/x-httpd-php54 .php
+# Use PHP71 as default
+AddHandler application/x-httpd-php71 .php
 <IfModule mod_suphp.c>
-suPHP_ConfigPath /opt/php54/lib
+    suPHP_ConfigPath /opt/php71/lib
 </IfModule>
 
 # BEGIN WordPress
