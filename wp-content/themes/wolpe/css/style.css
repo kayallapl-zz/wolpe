@@ -532,25 +532,19 @@ header #header-top.sticky {
     text-align: left;
 }
 
+#Artigos .cards .post .card .card-content p.date {
+    margin: 0 16px;
+    font-size: 14px;
+    color: #898989;
+    width: 100%;
+    text-align: center;
+}
+
 #Artigos .cards .post .card .card-content p.paragraph {
     width: 100%;
     padding: 0;
     box-sizing: border-box;
     font-size: 16px;
-}
-
-#Artigos .cards .post .card .card-content p.info {
-    font-size: 14px;
-    padding: 0;
-    color: #999;
-}
-
-#Artigos .cards .post .card .card-content p.info span {
-    font-size: 14px;
-    font-family: 'Roboto Bold';
-    letter-spacing: 0.5px;
-    color: #18e;
-    text-transform: uppercase;
 }
 
 #Artigos .button {
@@ -868,6 +862,7 @@ footer form[action="contact"] button {
 
 .retrieve .retrieve-content .date {
     margin: 0 0 15px;
+    font-style: oblique;
 }
 
 .retrieve.retrieve-Cursos, .retrieve.retrieve-Artigos {
