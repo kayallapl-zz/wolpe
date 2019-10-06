@@ -463,6 +463,7 @@ header #header-top.sticky {
 
 #Cursos .cards .card p.date {
     padding-top: 20px;
+    margin: 0 16px;
     font-size: 14px;
     color: #898989;
 }
@@ -580,7 +581,7 @@ header #header-top.sticky {
     text-align: right;
 }
 
-#post-84 .entry-content .address p i{
+#post-84 .entry-content .address p i {
     padding-left: 12px;
 }
 
