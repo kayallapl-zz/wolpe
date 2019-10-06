@@ -25,7 +25,7 @@ $args_cursos = array(
 	'posts_per_page' => 3
 );
 $cursos = new WP_Query($args_cursos);
-$args_pots = array(
+$args_posts = array(
 	'post_type' => 'artigos',
 	'order'    => 'DESC',
 	'posts_per_page' => 3
