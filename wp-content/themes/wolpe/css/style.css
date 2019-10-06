@@ -461,7 +461,7 @@ header #header-top.sticky {
     line-height: 1.25;
 }
 
-#Cursos .cards .card p.date, #Artigos .cards .post .card .card-content p.date {
+#Cursos .cards .card p.date {
     padding-top: 20px;
     margin: 0 16px;
     font-size: 14px;
