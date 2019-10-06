@@ -432,7 +432,7 @@ header #header-top.sticky {
 
 #Cursos .cards .card {
     width: 24%;
-    margin: 20px;
+    margin: 10px;
     border-radius: 8px;
     background-color: white;
     box-sizing: border-box;
@@ -456,13 +456,14 @@ header #header-top.sticky {
 
 #Cursos .cards .card p.title {
     font-size: 18px;
-    margin: 10px 20px;
+    margin: 10px 16px;
     padding: 0;
     line-height: 1.25;
 }
 
 #Cursos .cards .card p.date {
     padding-top: 20px;
+    margin: 0 16px;
     font-size: 14px;
     color: #898989;
 }
@@ -580,7 +581,7 @@ header #header-top.sticky {
     text-align: right;
 }
 
-#post-84 .entry-content .address p i{
+#post-84 .entry-content .address p i {
     padding-left: 12px;
 }
 
