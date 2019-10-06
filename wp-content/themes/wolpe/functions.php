@@ -394,9 +394,13 @@ function wpse_167441_reorder_calendar($query)
 {
 	if (!is_admin() && $query->is_main_query()) {
 
-		if (is_post_type_archive('cursos') || is_post_type_archive('tratamentos') || is_post_type_archive('artigos')) {
+		if (is_post_type_archive('tratamentos')) {
 			$query->set('orderby', 'date');
 			$query->set('order', 'ASC');
+		}
+		else if (is_post_type_archive('cursos') || is_post_type_archive('artigos')) {
+			$query->set('orderby', 'date');
+			$query->set('order', 'DESC');
 		}
 	}
 }
