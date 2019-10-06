@@ -21,16 +21,16 @@ $args_tratamentos = array(
 $tratamentos = new WP_Query($args_tratamentos);
 $args_cursos = array(
 	'post_type' => 'cursos',
-	'order'    => 'ASC',
+	'order'    => 'DESC',
 	'posts_per_page' => 3
 );
 $cursos = new WP_Query($args_cursos);
 $args_pots = array(
 	'post_type' => 'artigos',
-	'order'    => 'ASC',
+	'order'    => 'DESC',
 	'posts_per_page' => 3
 );
-$posts = new WP_Query($args_pots);
+$posts = new WP_Query($args_posts);
 get_header();
 ?>
 <section id="Intro">
